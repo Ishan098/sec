@@ -24,11 +24,6 @@
     100% { text-shadow: 0 0 10px #ff00c8; }
   }
   
-  .terminal pre {
-    animation: hacker-glitch 1.5s infinite alternate;
-  }
-
-  
   body {
     font-family: 'Cascadia Code', monospace;
     background: #ffe6f0;
