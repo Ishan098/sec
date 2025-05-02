@@ -57,9 +57,12 @@ function runTerminal() {
     "Compiling memories...",
     "Running compatibility check...",
     "2 months of smiles detected.",
-    "System alert: Potential girlfriend detected 💘",
     "",
-    "Permission to upgrade relationship status?"
+    "System alert: Potential",
+    "girlfriend detected 💘",
+    "",
+    "Permission to upgrade",
+    "relationship status?"
   ];
 
   let i = 0;
