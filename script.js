@@ -30,7 +30,7 @@ function enterPookieRealm() {
     document.getElementById('glitch-screen').classList.remove('visible');
     document.getElementById('page1').classList.add('visible');
     rebootSequence();
-  }, 6000);
+  }, 8000);
 }
 
 /* ========== 🧠 FAKE REBOOT ========== */
@@ -40,13 +40,13 @@ function rebootSequence() {
   const interval = setInterval(() => {
     text.textContent = `Rebooting${'.'.repeat(dots)}`;
     dots = (dots + 1) % 4;
-  }, 500);
+  }, 800);
   setTimeout(() => {
     clearInterval(interval);
     document.getElementById('page1').classList.remove('visible');
     document.getElementById('page2').classList.add('visible');
     runTerminal();
-  }, 6000);
+  }, 8000);
 }
 
 /* ========== 💻 TERMINAL ANIMATION ========== */
@@ -70,7 +70,7 @@ function runTerminal() {
     if (i < lines.length) {
       terminalText.innerHTML += lines[i] + "<br/>";
       i++;
-      setTimeout(typeNextLine, 1000);
+      setTimeout(typeNextLine, 2000);
     }
   }
   typeNextLine();
@@ -102,7 +102,7 @@ function runGlitch() {
   setTimeout(() => {
     glitch.remove();
     document.getElementById('page5').classList.add('visible');
-  }, 6000);
+  }, 8000);
 }
 
 /* ========== 🎉 FINAL CELEBRATION ========== */
@@ -204,7 +204,7 @@ document.getElementById('click-photo-btn').addEventListener('click', function() 
     // After a second, let's display the second flirty prediction
     setTimeout(() => {
       document.querySelector('.flirty-prediction').style.display = 'block';
-    }, 1500);
+    },2000);
   });
 
   function playGlitchSound() {
