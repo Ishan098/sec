@@ -70,7 +70,7 @@ function runTerminal() {
     if (i < lines.length) {
       terminalText.innerHTML += lines[i] + "<br/>";
       i++;
-      setTimeout(typeNextLine, 2000);
+      setTimeout(typeNextLine, 1000);
     }
   }
   typeNextLine();
@@ -93,7 +93,7 @@ function runGlitch() {
   glitch.className = 'screen glitchy visible';
   glitch.innerHTML = `
     <p>💖 SYSTEM OVERHEATING</p>
-    <p>✨ Sparkles Detected</p>
+    <p>✨ Butterflies Detected</p>
     <p>🫠 Melting from too much cuteness...</p>
     <p>💭 Wait... is this love or just really good weed?</p>
   `;
