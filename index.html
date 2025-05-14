@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>System Error: Heart Not Found 💔</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- 🎥 Reaction Recording -->
+  <div id="recorder" class="screen active">
+    <p>🎥 Hold up... we’re capturing your <strong>divine</strong> reaction 👑</p>
+    <button onclick="startRecording()">LESSGO GURLL 💅</button>
+  </div>
+
+  <!-- 🚨 Only Pookies Allowed -->
+  <div id="pookie-check" class="screen hidden">
+    <p>🚨 Only pookies allowed past this point!</p>
+    <button onclick="enterPookieRealm()">I'm ELITE 💖</button>
+    <button onclick="enterPookieRealm()">I'm QUEEN 💖</button>
+  </div>
+
+  <!-- 💥 Glitch Scene -->
+  <div id="glitch-screen" class="screen hidden glitchy">
+    <p class="neon-text">💻 DETECTED CUTENESS OVERLOAD...</p>
+    <p>💫 SYSTEM MELTDOWN DETECTED ...</p>
+    <p>🍃 USING ZA.EXE....</p>
+    <p>💨 Sending vibes to the cloud… </p>
+  </div>
+
+  <!-- Page 1: Crash -->
+  <div id="page1" class="screen hidden">
+    <h1>Error 520: Love Timeout</h1>
+    <p>System tried processing feelings... but they were too intense 🫣</p>
+    <p id="reboot-text"></p>
+  </div>
+
+  <!-- Page 2: Terminal -->
+  <div id="page2" class="screen hidden terminal">
+    <pre id="terminal-text"></pre>
+    <button onclick="nextPage('page3')">✨ Proceed ✨</button>
+  </div>
+
+  <!-- Page 3: Timeline with Predictions -->
+<div id="page3" class="screen hidden">
+    <div class="timeline">
+        <img src="download.jpeg" alt="Description of Image" width=40%>
+      
+  
+      <div id="prediction-container" class="hidden">
+        <p class="prediction">“You’re 99.9% perfect... but I can't wait to discover the other 0.1% 💘”</p>
+        <p class="flirty-prediction">“In the future, I see us together... a lot. Like, *way* more than we’ve planned 🥰”</p>
+      </div>
+  
+      <p class="ai-analysis">“She’s 99.9% divine . The other 0.1%? NOT DISCOVERED YET 💗”</p>
+      <p ><b>AI</b></p>
+    </div>
+    <button onclick="nextPage('page4')">What’s missing? ➜</button>
+  </div>
+  
+
+  <!-- Page 4: Cutie Test -->
+  <div id="page4" class="screen hidden">
+    <img src="https://media.giphy.com/media/oXXM02EG92aWCwaReY/giphy.gif?cid=ecf05e47qcl2avvmj4gcm7tlpofsy52ismurclpm415xr40y&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="Description of Image" height=40%>
+    <p><b>Do you like surprises? ✨</b></p><p>Yes!!!</p>
+    <p><b> you like me? 💞</b></p><p>TF. Obviously!!</p>
+    <p><b>Should we make this official? 💍</b></p><button onclick="runGlitch()">YES</button>
+  </div>
+
+  <!-- Page 5: The Question -->
+  <div id="page5" class="screen hidden">
+    <p>Sooo… I’ve been dying to ask this one thing.</p>
+    <h2>Will you be my girlfriend? 💕💭</h2>
+    <button onclick="celebrate()">YES, LET’S DO THIS 💕</button>
+    <button onclick="oops()">UHH… 😳</button>
+  </div>
+
+  <!-- Final Page: Celebration -->
+  <div id="final-page" class="screen hidden">
+    <p>YAY! You just upgraded my whole universe 💫💞</p>
+    <p> Caught your reaction 👀💅</p>
+    <video id="reaction-video" controls></video>
+    <a id="download-link" download="reaction.mp4">🎥 Download This Cutie Clip</a>
+    <div class="extras"><br>
+    <p>Love You So Much <strong>My Lady Divine 🥰.</strong></p>
+      
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <script src="script.js"></script>
+  <img src="https://media.giphy.com/media/mXn6WvYvF3cD6/giphy.gif" style="position:fixed; top:10px; left:10px; width:80px; z-index:50;">
+
+</body>
+</html>
